@@ -52,14 +52,14 @@ module.exports = {
             "Pulled Pork Burger",
             "Tofu Teriyaki",
         ];
-        const randomDishes = getRandomElements(dishes, 2);
+        const randomDishes = getRandomMeal(dishes, 2);
         res.status(200).send(randomDishes);
     },
 
 }
 
 
-function getRandomElements(arr, count) {
+function getRandomMeal(arr, count) {
     let result = new Set();
     while (result.size < count) {
         let randomIndex = Math.floor(Math.random() * arr.length);
