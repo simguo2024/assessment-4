@@ -4,11 +4,27 @@
     <title>Back End Assessment</title>
   </head>
   <body class="container">
-    <button id="complimentButton">Get a compliment</button>
-    <button id="fortuneButton">Get Fortune</button>
-    <button id="getTimeButton">Get Time</button>
-    <button id="whatToEatButton">What to eat tonight</button>
-
+    <div class="buttonGoup">
+      <button id="complimentButton">Get a compliment</button>
+      <button id="fortuneButton">Get Fortune</button>
+      <button id="getTimeButton">Get Time</button>
+      <button id="whatToEatButton">What to eat tonight</button>
+    </div><br>
+    <div >
+      <form id="Form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="nameInput"><br><br>
+        
+        <label for="count">Select Counts:</label>
+        <select id="countInput">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+        </select><br><br>
+        <button type="submit">Get</button>
+    </form>
+    </div>
+    
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
     
